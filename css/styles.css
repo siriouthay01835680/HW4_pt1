@@ -1,0 +1,97 @@
+/*  Aria Siriouthay
+    HW3
+    styles.css
+    help: w3 schools */
+
+/* font styling for header, paragraphs,
+and label elements */
+h1, p, label{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* main header styling */
+h1{
+    text-align: center;
+    background-color: pink;
+    color: white;
+}
+/* submit button styling;
+adding color and shadow for
+dimension */
+#submitbtn{
+    border: none;
+    background-color:pink;
+    box-shadow: 0 0 5px 1px lightgray;
+}
+/* adding style to change color when
+mouse is hovered */
+#submitbtn:hover{
+    background-color: lavender;
+}
+/* table styling */
+table{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-collapse: collapse;
+    font-size: smaller;
+}
+/* alternating colors for each row */
+tr:nth-child(even) 
+{
+    background-color:lavenderblush
+}
+/* targetting the table column header;
+position: sticky combined w/ top:0 allows
+for element to behave like position relative
+when element is inside viewport, otherwise
+behaves like fixed when it is outside */
+th[scope=col]{
+    background-color:lavender;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+/* targetting the table row header */
+th[scope=row]{
+    background-color:lavender;
+    color: white;
+    position: sticky;
+    left: 0;
+}
+/* adding border around table data */
+td{
+    border: 2px solid white;
+}
+/* styling table container to be scrollable
+w/ fixed height and width */
+.table-container{
+    overflow: scroll;
+    max-width: 500px;
+    max-height: 500px;
+}
+/* form styling */
+form{
+    border: 2px solid pink;
+    padding: 10px;
+}
+/* label styling */
+label{
+    margin: 5px;
+
+}
+/* styling error messages */
+.error{
+    color:red;
+}
+input.error{
+    border: 1px solid red;
+}
+label.error{
+    color: red;
+}
+/* styling directions next to text fields */
+span{
+    font-style: italic;
+    font-size: smaller;
+    color: darkgray;
+}
+
