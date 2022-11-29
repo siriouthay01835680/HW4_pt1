@@ -1,10 +1,10 @@
 //additional methods to ensure min values are not greater than max
 $.validator.addMethod("minY_lessthan_maxY", function(value, element){
     return parseInt($("#inputMinY").val()) <= parseInt($("#inputMaxY").val())
-}, "Minimum value of Y cannot be greater than maximum value of Y.");
+}, "Please ensure that the minimum value for Y is given, and that the minimum is not greater than the maximum.");
 $.validator.addMethod("minX_lessthan_maxX", function(value, element){
     return parseInt($("#inputMinX").val()) <= parseInt($("#inputMaxX").val())
-}, "Minimum value of X cannot be greater than maximum value of X.");
+}, "Please ensure the minimum value for X is given, and that the minimum is not greater than the maximum.");
 //https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.js
 //method to only accept neg/pos integers (no decimals)
 $.validator.addMethod( "integer", function( value, element ) {
