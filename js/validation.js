@@ -50,32 +50,32 @@ $(document).ready(function(){
             //creating table by getting html table id and 
             //using temp table var to append html to edit
             //doc
-            var minY = parseInt($("#inputMinY").val())
-            var maxY = parseInt($("#inputMaxY").val())
-            var minX = parseInt($("#inputMinX").val())
-            var maxX = parseInt($("#inputMaxX").val())
-            var mtable = document.getElementById('table')
-            var table = ''
-            table += '<tr>'
-            table += '<td></td>'
+            var minY = parseInt($("#inputMinY").val());
+            var maxY = parseInt($("#inputMaxY").val());
+            var minX = parseInt($("#inputMinX").val());
+            var maxX = parseInt($("#inputMaxX").val());
+            var mtable = document.getElementById('table');
+            var table = '';
+            table += '<tr>';
+            table += '<td></td>';
             //iterating through input y values to make column header
             for (var j = minY; j <= maxY; j++) {
-                table += '<th scope = "col">' + j + '</th>'
+                table += '<th scope = "col">' + j + '</th>';
             }
-            table += '</tr>'
+            table += '</tr>';
             //iterating through input x values to make row header
             //and to also create table data via nested loop,
             //multiplying each index
             for (var i = minX; i <= maxX; i++) {
-                table += '<tr>'
-                table += '<th scope = "row">' + i + '</th>'
+                table += '<tr>';
+                table += '<th scope = "row">' + i + '</th>';
                 for (var j = minY; j <= maxY; j++) {
-                    table += '<td>' + (i * j) + '</td>'
+                    table += '<td>' + (i * j) + '</td>';
                 }
-                table += '</tr>'
+                table += '</tr>';
             }
             //updating html of main table
-            mtable.innerHTML = table
+            mtable.innerHTML = table;
         }
     });
 });
